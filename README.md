@@ -4,7 +4,7 @@ In this project,i implemented a car that follows a track with a black line and s
   
 ## Table of Contents
 * [Hardware Details](#Hardware-Details)
-* [Example](#Example) 
+* [File introduction](#File-introduction) 
 * [Demo](#Demo)
 
 
