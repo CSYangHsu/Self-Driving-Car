@@ -20,7 +20,7 @@ reflects IR, and the sensor outputs HIGH; a black floor absorbs IR, and the sens
   
   
  　Pin connections:  
-　　- VCC pin: connects to the supply power provided by the FPGA board.  
+　　  * VCC pin: connects to the supply power provided by the FPGA board.  
 　　- GND pin: connects to the ground of the FPGA board.  
 　　- L pin: outputs the status of the left IR sensor. You should connect it to an input port.  
 　　- C pin: outputs the status of the middle IR sensor. You should connect it to an input port.  
