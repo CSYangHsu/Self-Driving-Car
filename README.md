@@ -30,13 +30,12 @@ reflects IR, and the sensor outputs HIGH; a black floor absorbs IR, and the sens
     
 
 - Ultrasonic sensor :  
-  
-![image](https://user-images.githubusercontent.com/86723888/154815935-797438aa-481d-43a5-95ba-92137b9db3d6.png) 　![image](https://user-images.githubusercontent.com/86723888/154816411-fba4b50c-3658-4d55-900d-fca8e563cc24.png)    
-  The HC-SR04 Ultrasonic sensor can measure the distance between the sensor module and the object in front of it.  
-     - First, send a 10us pulse to the “Trig” pin to trigger the sensor.   
-     - The sensor will then generate eight pulses of ultrasonic soundwaves and determine the distance.   
-     - After that, the “Echo” pin will output a long pulse. The length of the pulse is equal to the total travel time of the soundwave.  
-     - Calculate the distance, that is, (pulse_length / 2) * 340(m/s) .  
-     - Each measurement should have a >60ms interval for a better accuracy.
+![image](https://user-images.githubusercontent.com/86723888/154815935-797438aa-481d-43a5-95ba-92137b9db3d6.png) 　![image](https://user-images.githubusercontent.com/86723888/154816411-fba4b50c-3658-4d55-900d-fca8e563cc24.png)  
+The HC-SR04 Ultrasonic sensor can measure the distance between the sensor module and the object in front of it.  
+   - First, send a 10us pulse to the “Trig” pin to trigger the sensor.   
+   - The sensor will then generate eight pulses of ultrasonic soundwaves and determine the distance.   
+   - After that, the “Echo” pin will output a long pulse. The length of the pulse is equal to the total travel time of the soundwave.  
+   - Calculate the distance, that is, (pulse_length / 2) * 340(m/s) .  
+   - Each measurement should have a >60ms interval for a better accuracy.
 
 
