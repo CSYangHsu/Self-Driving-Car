@@ -5,9 +5,8 @@ In this project,i implemented a car that follows a track with a black line and s
 ## Table of Contents
 * [Hardware Details](#Hardware-Details)
 * [Example](#Example) 
-* [Complete Grammar Rules](#Complete-Grammar-Rules)
-* [Operators and Variables](#Operators-and-Variables)
-* [Instruction Set Architecture](#Instruction-Set-Architecture)
+* [Demo](#Demo)
+
 
 ## Hardware Details
 - Basys 3 Artix-7 FPGA Trainer Board
@@ -53,6 +52,9 @@ B.
 
 
 
+
+## Demo  
+https://user-images.githubusercontent.com/86723888/154817033-83cd8877-9dcb-40cf-bc83-251738feacbf.mp4
 
 
 
