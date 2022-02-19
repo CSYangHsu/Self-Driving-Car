@@ -36,6 +36,15 @@ The HC-SR04 Ultrasonic sensor can measure the distance between the sensor module
    - The sensor will then generate eight pulses of ultrasonic soundwaves and determine the distance.   
    - After that, the “Echo” pin will output a long pulse. The length of the pulse is equal to the total travel time of the soundwave.  
    - Calculate the distance, that is, (pulse_length / 2) * 340(m/s) .  
-   - Each measurement should have a >60ms interval for a better accuracy.
+   - Each measurement should have a >60ms interval for a better accuracy.  
+   ![image](https://user-images.githubusercontent.com/86723888/154816687-aa33f456-03b8-4c9f-b9cc-8c848c4be7b7.png)  
+
+
+
+  Pin connections:  
+   - VCC pin: connected to the supply power provided by the FPGA board. 
+   - Trig pin: connected to an output pin on the FPGA board to trigger the sensor
+   - Echo pin: connected to an input pin on the FPGA board to measure pulse length.     
+   - Gnd pin: connected to the ground of the FPGA board.   
 
 
