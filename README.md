@@ -17,14 +17,7 @@ In this project,i implemented a car that follows a track with a black line and s
 This track sensor has 3 independent infrared (IR) sensors. Each IR sensor has an IR blaster and an IR
 receiver. If the IR is being reflected by the floor, the sensor will output HIGH. Hence, a white floor
 reflects IR, and the sensor outputs HIGH; a black floor absorbs IR, and the sensor outputs LOW.  
-  
-  
-  Pin connections:  
-   - VCC pin: connects to the supply power provided by the FPGA board.  
-   - GND pin: connects to the ground of the FPGA board.  
-   - L pin: outputs the status of the left IR sensor. You should connect it to an input port.  
-   - C pin: outputs the status of the middle IR sensor. You should connect it to an input port.  
-   - R pin: outputs the status of the right IR sensor. You should connect it to an input port.  
+ 
   
  
     
@@ -42,12 +35,7 @@ The HC-SR04 Ultrasonic sensor can measure the distance between the sensor module
 
 
 
-  Pin connections:  
-   - VCC pin: connected to the supply power provided by the FPGA board. 
-   - Trig pin: connected to an output pin on the FPGA board to trigger the sensor
-   - Echo pin: connected to an input pin on the FPGA board to measure pulse length.     
-   - Gnd pin: connected to the ground of the FPGA board.   
-
+ 
 
 - L298N motor driver and motors  
 ![image](https://user-images.githubusercontent.com/86723888/154816716-832be819-a2d7-4116-91fd-e5b034fd57b4.png)  
