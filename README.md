@@ -37,6 +37,7 @@ The HC-SR04 Ultrasonic sensor can measure the distance between the sensor module
    - After that, the “Echo” pin will output a long pulse. The length of the pulse is equal to the total travel time of the soundwave.  
    - Calculate the distance, that is, (pulse_length / 2) * 340(m/s) .  
    - Each measurement should have a >60ms interval for a better accuracy.  
+     
    ![image](https://user-images.githubusercontent.com/86723888/154816687-aa33f456-03b8-4c9f-b9cc-8c848c4be7b7.png)  
 
 
