@@ -3,7 +3,7 @@ In this project,i implemented a car that follows a track with a black line and s
   
   
 ## Table of Contents
-* [Hardware Details](#HardwareDetails)
+* [Hardware Details](#Hardware-Details)
 * [Example](#Example) 
 * [Complete Grammar Rules](#Complete-Grammar-Rules)
 * [Operators and Variables](#Operators-and-Variables)
