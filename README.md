@@ -54,14 +54,14 @@ The HC-SR04 Ultrasonic sensor can measure the distance between the sensor module
 The L298N is a dual H-Bridge motor driver which supports the speed and direction control of two DC
 motors at the same time. ENA, IN1, IN2 controls the motor A, while ENB, IN3, IN4 controls the motor
 B.  
-- Direction control:  
-![image](https://user-images.githubusercontent.com/86723888/154816761-114b9c71-cf35-47f3-b4ee-2b71a0e1e733.png)  
+  - Direction control:  
+  ![image](https://user-images.githubusercontent.com/86723888/154816761-114b9c71-cf35-47f3-b4ee-2b71a0e1e733.png)  
 
-- Speed controls:    
-Send PWM signals to ENA and ENB to control the speed. A larger duty cycle results in a faster
-speed.  
-![image](https://user-images.githubusercontent.com/86723888/154816795-5fecaaef-1c8c-47fe-85e3-252b0b4449a9.png) 　![image](https://user-images.githubusercontent.com/86723888/154816799-e59272bc-fd65-472a-b010-44bbc46ac34a.png)  
-![image](https://user-images.githubusercontent.com/86723888/154816806-c20d4e97-23a3-4cbf-a9bc-468ec30fabe3.png) 　![image](https://user-images.githubusercontent.com/86723888/154816815-47ef9185-3ce4-423b-8852-05cde4268927.png)  
+  - Speed controls:    
+  Send PWM signals to ENA and ENB to control the speed. A larger duty cycle results in a faster
+  speed.  
+  ![image](https://user-images.githubusercontent.com/86723888/154816795-5fecaaef-1c8c-47fe-85e3-252b0b4449a9.png) 　![image](https://user-images.githubusercontent.com/86723888/154816799-e59272bc-fd65-472a-b010-44bbc46ac34a.png)  
+  ![image](https://user-images.githubusercontent.com/86723888/154816806-c20d4e97-23a3-4cbf-a9bc-468ec30fabe3.png) 　![image](https://user-images.githubusercontent.com/86723888/154816815-47ef9185-3ce4-423b-8852-05cde4268927.png)  
 
 
 
