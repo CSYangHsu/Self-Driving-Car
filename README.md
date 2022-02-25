@@ -4,7 +4,7 @@ In this project,i implemented a car that follows a track with a black line and s
   
 ## Table of Contents
 * [Hardware Details](#Hardware-Details)
-* [File introduction](#File-introduction) 
+* [Design](#Design) 
 * [Demo](#Demo)
 
 
@@ -51,7 +51,7 @@ B.
   ![image](https://user-images.githubusercontent.com/86723888/154816806-c20d4e97-23a3-4cbf-a9bc-468ec30fabe3.png) 　![image](https://user-images.githubusercontent.com/86723888/154816815-47ef9185-3ce4-423b-8852-05cde4268927.png)  
 
 
-
+## Design
 
 ## Demo  
 Pass the two maps below.  
