@@ -52,7 +52,39 @@ B.
 
 
 ## Design
+- tracker_sensor.v: 車頭的紅外線 sensor 判斷車子是否在軌道上，依據情況判定左右轉及直行。
+  共有 3 個 Tracker sensors，分置於左中右。當看到黑色軌道時，紅外線被吸收，其輸出為 0，
+  看到白色 floor 時，反射紅外線，其輸出為 1。但在 lab9_top.v 裡，將 sensor 的輸出反相後送
+  到 tracker_sensor.v 以方便識讀。因此在 tracker_sensor.v 中，1 為黑線，0 為白底。
+  針對車子偏左偏右、在中間的狀態描述，和軌道的寬度有關。此處的軌道為一個sensor的寬度。  
+    
+  車身狀態: 輸出 state (2 bits)應對。  
+    + 在黑線中間時: state = (0,1)，代表可以直行 (direct).  
+    + 偏黑線左邊時: state = (0,0)，代表需右轉.  
+    + 偏黑線右邊時: state = (1,0)，代表需左轉.  
+   要右轉, 就要把右motor的速度變慢. 同理, 要左轉, 就要把左motor的速度變慢. 詳細的細節, 會在 motor.v 說明。  
 
+- sonic.v: 用來判斷車子是否遇到障礙物。  
+做法為每 100 mini-seconds 做一次距離的量測。每一次量測，紀錄 echo (from sonic sensors)
+的時間長度，再換算成距離(以公分表示)。  
+
+
+- motor.v: 控制車子前進和轉彎。
+    + 前進: 左右兩邊的速度一樣。  
+    + 右轉時，右邊的 motor 向後轉，左邊 motor 向前轉。  
+    + 左轉時, 左邊的 motor 向後轉，右邊 motor 向前轉。  
+  控制轉快和轉慢由 duty 決定。 Duty 越大，轉速越快。並且由 PWM 來控制 Duty。  
+  
+- 轉大彎For U-turn: 在面對極大轉彎時(趨近 90 度)，當轉彎到一半時，容易遇到車頭與黑線平行，三個tracker sensors 感應到 (0,0,0) 全黑的情況，而導致停下。  
+Sol: 就像日常生活開車一樣，遇到極大轉彎時，先轉一半→直行→再轉剩下一半。  
+    Ex. 右轉大彎  
+    1. 照舊右轉  
+    2. 中途遇到(0,0,0)，亦即{left_track, mid_track, right_track} = {1,1,1}時，直行。  
+    3. 直行到非(0,0,0)時，回歸(1.)步驟狀態，繼續右轉，直到車頭轉回軌道。  
+    ![image](https://user-images.githubusercontent.com/86723888/155745662-ff760a57-b0ae-40b5-9424-b22eef76275d.png)
+
+  
+  
 ## Demo  
 Pass the two maps below.  
 ![image](https://user-images.githubusercontent.com/86723888/155743619-40691a19-7b4c-4040-9293-8d775ad35c5c.png) 　![image](https://user-images.githubusercontent.com/86723888/155743439-b2dcf388-6d1d-4aa3-9d28-84574e0e1cf2.png)
